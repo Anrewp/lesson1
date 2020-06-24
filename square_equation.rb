@@ -13,8 +13,8 @@ if d > 0
   x2 = (-b - Math.sqrt(d.abs)) / (2.0 * a) 
   puts "D = #{d}, roots are x1 = #{x1.round(3)}, x2 = #{x2.round(3)}"
 elsif d == 0  
-	x = (-b + Math.sqrt(d.abs)) / (2.0 * a) 
-	puts "D = #{d}, root x1,2 = #{x.round(3)}"
+  x = (-b + Math.sqrt(d.abs)) / (2.0 * a) 
+  puts "D = #{d}, root x1,2 = #{x.round(3)}"
 else
   puts "D = #{d}, There is no root"
 end
