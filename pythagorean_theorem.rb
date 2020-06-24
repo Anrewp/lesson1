@@ -1,14 +1,14 @@
 
 print 'Enter first side (a): '
-a = gets.chomp.to_i
+a = gets.chomp.to_f
 print 'Enter second side (b): '
-b = gets.chomp.to_i
+b = gets.chomp.to_f
 print 'Enter third side (c): '
-c = gets.chomp.to_i
+c = gets.chomp.to_f
 
 triangle_sides = [a, b, c]
 hypotenuse = triangle_sides.max
-catheti_squre_sum = (triangle_sides - [hypotenuse]).map{ |value| value**2 }.inject(&:+)
+catheti_squre_sum = (triangle_sides - [hypotenuse]).map{ |value| value**2 }.sum
 
 if catheti_squre_sum == hypotenuse**2
   puts 'Triangle is rectangular'

@@ -7,4 +7,4 @@ base = gets.chomp.to_f
 print "Enter triangle height: "
 height = gets.chomp.to_f
 
-puts "Area = #{ (base * height)/2 }"
+puts "Area = #{ (base * height) / 2 }"
